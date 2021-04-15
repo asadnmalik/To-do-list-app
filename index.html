@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/02b5c565be.js" crossorigin="anonymous"></script>
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">ToDo List App</h1>
+            <form class="search">
+                <input type="text" name="search" placeholder="Search tasks" class="form-control m-auto">
+            </form>
+        </header>
+
+
+
+        <!-- Uncompleted Tasks -->
+        <ul class="list-group todos mx-auto text-light">
+
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 1</span>
+                <div class="icons">
+                    <i class="far fa-trash-alt delete px-1"></i>
+                    <i class="fas fa-check check px-1"></i>
+                </div>
+
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 2</span>
+                <div class="icons">
+                    <i class="far fa-trash-alt delete px-1"></i>
+                    <i class="fas fa-check check px-1"></i>
+                </div>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 3</span>
+                <div class="icons">
+                    <i class="far fa-trash-alt delete px-1"></i>
+                    <i class="fas fa-check check px-1"></i>
+                </div>
+            </li> -->
+    
+
+        </ul>
+
+
+        <!-- Adding new tasks -->
+        <form action="" class="add text-center my-4">
+            <label class="text-light">Add a new todo...</label>
+            <input type="text" name="add" placeholder="New task.." class="form-control m-auto">
+        </form>
+
+
+
+        <!-- COMPLETED TASK -->
+        <h4 class="text-light text-center my-3">Completed Tasks</h4>
+        <ul class="list-group todos-completed mx-auto text-light">
+
+            <!-- <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 1com</span>
+                <i class="far fa-trash-alt delete"></i>
+                
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 2com</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>To Do Item 2com</span>
+                <i class="far fa-trash-alt delete"></i>
+            </li>
+     -->
+
+        </ul>
+
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
