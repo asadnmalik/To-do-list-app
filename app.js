@@ -1,6 +1,6 @@
 // To Do App
 
-// Task 1: Implement the Add Function. 
+// Implement the Add Function. 
 
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.todos');
@@ -17,10 +17,10 @@ addForm.addEventListener('submit', (e) => {
     }
 })
 
-//Implement a function that creates an HTML template that we can add to the DOM. 
+// Implement a function that creates an HTML template that we can add to the DOM. 
 
 
-//adding new task to uncompleted task list
+// adding new task to uncompleted task list
 const generateTemplate = (todo) => {
 
     const html = `
@@ -36,7 +36,7 @@ const generateTemplate = (todo) => {
 
 }
 
-//adding completed task to completed list
+// adding completed task to completed list
 const generateTemplateCompleted = (todo) => {
 
     const html = `
@@ -52,14 +52,9 @@ const generateTemplateCompleted = (todo) => {
 
 
 
+// Implement the Delete Function. 
 
-
-
-
-
-// Task 2: Implement the Delete Function. 
-
-//deleting uncompleted tasks
+// deleting uncompleted tasks
 list.addEventListener('click', (e) => {
 
     if (e.target.classList.contains('delete')) {
@@ -67,7 +62,7 @@ list.addEventListener('click', (e) => {
         e.target.parentElement.parentElement.remove();
     }
 })
-//deleting completed tasks
+// deleting completed tasks
 listCompleted.addEventListener('click', (e) => {
 
     if (e.target.classList.contains('delete')) {
@@ -78,20 +73,7 @@ listCompleted.addEventListener('click', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Task 3: Implement the Searching & Filtering Function. 
+// Implement the Searching & Filtering Function. 
 
 const search = document.querySelector('.search input');
 
@@ -99,10 +81,6 @@ search.addEventListener('keyup', () => {
     const term = search.value.trim().toLowerCase();
     filteredTodos(term);
 })
-
-
-
-
 
 
 // Implement a function that takes the term and matches with the todo item list. 
@@ -117,8 +95,8 @@ const filteredTodos = (term) => {
         .forEach((todo) => todo.classList.remove('filtered')) 
 }
 
-// Task 4: Add another "complete" icon right next to the delete icon. 
-// Task 5: Implement a function that takes the "complete icon" and adds a click event listener
+
+// Implement a function that takes the "complete icon" and adds a click event listener
 
 
 list.addEventListener('click', (e) => {
@@ -131,4 +109,4 @@ list.addEventListener('click', (e) => {
         generateTemplateCompleted(completedTask)
     }
 })
-// Task 6: background color (dull), strikethrough, add to the completed task
+
