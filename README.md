@@ -1,7 +1,8 @@
 # To-Do list Web Application
 ## Overview
+
 An application to track your tasks or make a todo list. 
----
+
 
 ## Demo
 ![Demo Gif](https://s4.gifyu.com/images/ezgifcom-gif-maker-2.gif)
